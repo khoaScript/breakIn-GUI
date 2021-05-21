@@ -124,3 +124,11 @@ local player = lib:CreateWindow("Player")
 		local tpButton = teleport:Button("Teleport", function()
 			chr.HumanoidRootPart.CFrame = shared.selectedLocation
 		end)
+		
+local gui = lib:CreateWindow("GUI")
+	
+	local settings = gui:CreateFolder("Settings")
+		settings:GuiSettings()
+	
+	local others = gui:CreateFolder("Others")
+		others:DestroyGUI()
